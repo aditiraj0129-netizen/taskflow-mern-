@@ -110,7 +110,7 @@ Create `client/.env`:
 REACT_APP_API_URL=http://localhost:5000/api
 ```
 
-### 3 — Run
+3 — Run
 
 ```bash
 # Terminal 1 — API server (http://localhost:5000)
@@ -120,7 +120,7 @@ cd server && npm run dev
 cd client && npm start
 ```
 
-## API Reference
+API Reference
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -132,8 +132,7 @@ cd client && npm start
 | `DELETE` | `/api/tasks/:id` | Delete single task |
 | `POST` | `/api/tasks/bulk-delete` | Delete multiple tasks |
 | `GET` | `/api/health` | Health check |
-
-### Query parameters — `GET /api/tasks`
+ Query parameters — `GET /api/tasks`
 
 | Param | Values | Description |
 |-------|--------|-------------|
@@ -142,7 +141,7 @@ cd client && npm start
 | `sort` | `-createdAt` `createdAt` `dueDate` `title` | Sort order |
 | `search` | string | Full-text search on title + description |
 
-### Task schema
+ Task schema
 
 ```json
 {
@@ -155,41 +154,12 @@ cd client && npm start
 }
 ```
 
-## Deployment
+<img width="476" height="277" alt="Screenshot 2026-06-24 at 8 47 31 PM" src="https://github.com/user-attachments/assets/bd96b725-90b7-4f23-8ed2-e7ef6ba17d61" />
 
-### Backend → [Render](https://render.com) (free tier)
 
-1. Push repo to GitHub
-2. New **Web Service** on Render → connect repo
-3. Set **Root Directory** to `server`
-4. **Build command:** `npm install`
-5. **Start command:** `node index.js`
-6. Add environment variables in Render dashboard
 
-### Frontend → [Vercel](https://vercel.com) (free tier)
 
-1. New project on Vercel → connect same repo
-2. Set **Root Directory** to `client`
-3. Add env var: `REACT_APP_API_URL=https://your-backend.onrender.com/api`
-4. Deploy
 
-Then add your Vercel URL to `CLIENT_URL` in Render.
-
----
-
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| `N` | New task |
-| `/` | Focus search |
-| `1` | Kanban board view |
-| `2` | List view |
-| `3` | Analytics view |
-| `Ctrl+A` | Select all tasks |
-| `Delete` | Delete selected tasks |
-| `Esc` | Close modal / clear selection |
-| `?` | Show shortcuts overlay |
 
 ---
 
