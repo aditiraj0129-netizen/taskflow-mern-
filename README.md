@@ -99,7 +99,7 @@ cd ../client && npm install
 Create `server/.env`:
 
 ```env
-PORT=5000
+PORT=5001
 MONGODB_URI=mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/taskflow?retryWrites=true&w=majority
 NODE_ENV=development
 CLIENT_URL=http://localhost:3000
@@ -114,7 +114,7 @@ REACT_APP_API_URL=http://localhost:5000/api
 3 — Run
 
 ```bash
-# Terminal 1 — API server (http://localhost:5000)
+# Terminal 1 — API server (http://localhost:5001)
 cd server && npm run dev
 
 # Terminal 2 — React app (http://localhost:3000)
