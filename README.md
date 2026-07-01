@@ -155,7 +155,7 @@ API Reference
 }
 ```
 
-<img width="476" height="277" alt="Screenshot 2026-06-24 at 8 47 31 PM" src="https://github.com/user-attachments/assets/bd96b725-90b7-4f23-8ed2-e7ef6ba17d61" />
+
 
 
 
